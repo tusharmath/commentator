@@ -1,0 +1,23 @@
+{
+  "name": "commentator",
+  "version": "1.0.0",
+  "description": "Creates a comment on a pull request",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "author": "Tushar Mathur <tusharmath@gmail.com>",
+  "repository": "git@github.com:tusharmath/commentator.git",
+  "license": "ISC",
+  "dependencies": {
+    "request-promise": "^4.1.1"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
