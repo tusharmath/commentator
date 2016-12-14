@@ -2,7 +2,7 @@
   "name": "commentator",
   "version": "0.0.0-development",
   "description": "Creates a comment on a pull request",
-  "main": "index.js",
+  "bin": "./src/cli",
   "scripts": {
     "test": "ava",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
