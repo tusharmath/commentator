@@ -4,6 +4,8 @@
   "description": "Creates a comment on a pull request",
   "bin": "./src/cli",
   "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "Tushar Mathur <tusharmath@gmail.com>",
