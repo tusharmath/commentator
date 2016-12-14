@@ -1,10 +1,11 @@
 {
   "name": "commentator",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Creates a comment on a pull request",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "Tushar Mathur <tusharmath@gmail.com>",
   "repository": "git@github.com:tusharmath/commentator.git",
@@ -13,7 +14,8 @@
     "request-promise": "^4.1.1"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^1.2.0"
+    "cz-conventional-changelog": "^1.2.0",
+    "semantic-release": "^6.3.2"
   },
   "config": {
     "commitizen": {
