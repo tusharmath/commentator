@@ -5,6 +5,7 @@
   "bin": "./src/cli",
   "scripts": {
     "build": "tsc",
+    "postinstall": "typings install",
     "prepublish": "npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -17,7 +18,8 @@
   "devDependencies": {
     "cz-conventional-changelog": "^1.2.0",
     "semantic-release": "^6.3.2",
-    "typescript": "^2.1.4"
+    "typescript": "^2.1.4",
+    "typings": "^2.0.0"
   },
   "config": {
     "commitizen": {
