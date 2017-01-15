@@ -1,5 +1,5 @@
 # Commentator
-A simple pull-request comentator for travis.
+A simple pull-request (PR) comentator for travis.
 
 ![alt](image.png)
 
@@ -32,4 +32,4 @@ A simple pull-request comentator for travis.
         - /^v\d+\.\d+\.\d+$/
     ```
     
-   3. That's all! Everytime now when travis runs the above `npm run coverage` script it will comment the results on the PR.
+3. That's all! Everytime now when travis runs the above `npm run coverage` script it will comment the results on the PR.
