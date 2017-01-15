@@ -1,17 +1,30 @@
 # Commentator
-A simple pull-request comentator, that's all.
+A simple pull-request comentator for travis.
 
 ![alt](image.png)
 
 ## Usage
 
-- Install commentator globally
-```
-npm i -g comentator
-```
-
-- Pass command line arguments
-
-```
-$ echo "Hello World" | commentator
-```
+1. add commentator as a dev dependency
+    ```bash
+    npm i commentator --save-dev
+    ```
+2. Edit your `travis.yml` with the message you'd like to comment your PR with.
+    ```patch
+    language: node_js
+    cache:
+      directories:
+        - node_modules
+    notifications:
+      email: false
+    node_js:
+      - '7'
+    before_script:
+      - npm prune
+    +   - npm run coverage | commentator
+    after_success:
+      - npm run semantic-release
+    branches:
+      except:
+        - /^v\d+\.\d+\.\d+$/
+    ```
