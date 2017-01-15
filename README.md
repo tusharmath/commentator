@@ -15,7 +15,7 @@ Edit your `travis.yml` with the message you'd like to comment your PR with.
     node_js:
       - '7'
     before_install:
-+     - npm i -g commentator typings
++     - npm i -g commentator
     before_script:
       - npm prune
 +     - npm run coverage | commentator
