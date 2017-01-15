@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const rp = require('request-promise')
 
 let body = ''
