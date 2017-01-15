@@ -10,7 +10,8 @@ A simple pull-request comentator for travis.
     npm i commentator --save-dev
     ```
 2. Edit your `travis.yml` with the message you'd like to comment your PR with.
-    ```yml
+
+    ```diff
     language: node_js
     cache:
       directories:
@@ -21,7 +22,7 @@ A simple pull-request comentator for travis.
       - '7'
     before_script:
       - npm prune
-      - npm run coverage | commentator
+   + - npm run coverage | commentator
     after_success:
       - npm run semantic-release
     branches:
