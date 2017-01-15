@@ -5,10 +5,12 @@ A simple pull-request comentator for travis.
 
 ## Usage
 
-1. add commentator as a dev dependency
+1. Add commentator as a dev dependency
+    
     ```bash
     npm i commentator --save-dev
     ```
+    
 2. Edit your `travis.yml` with the message you'd like to comment your PR with.
 
     ```diff
@@ -29,3 +31,5 @@ A simple pull-request comentator for travis.
       except:
         - /^v\d+\.\d+\.\d+$/
     ```
+    
+   3. That's all! Everytime now when travis runs the above `npm run coverage` script it will comment the results on the PR.
