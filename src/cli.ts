@@ -1,6 +1,6 @@
 /// <reference path="../typings/index.d.ts" />
 
-import rp from 'request-promise'
+const rp = require('request-promise')
 let body = ''
 process.stdin.resume()
 process.stdin.setEncoding('utf8')

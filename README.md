@@ -13,5 +13,5 @@ npm i -g comentator
 - Pass command line arguments
 
 ```
-$ echo "Hello World" > commentator
+$ echo "Hello World" | commentator
 ```

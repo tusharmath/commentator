@@ -4,6 +4,9 @@
   "description": "Creates a comment on a pull request",
   "bin": "./src/cli",
   "scripts": {
+    "build": "tsc",
+    "postinstall": "typings install",
+    "prepublish": "npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "Tushar Mathur <tusharmath@gmail.com>",
@@ -14,7 +17,9 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "^1.2.0",
-    "semantic-release": "^6.3.2"
+    "semantic-release": "^6.3.2",
+    "typescript": "^2.1.4",
+    "typings": "^2.0.0"
   },
   "config": {
     "commitizen": {
