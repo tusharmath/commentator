@@ -1,6 +1,5 @@
-/// <reference path="../typings/index.d.ts" />
-
 const rp = require('request-promise')
+
 let body = ''
 process.stdin.resume()
 process.stdin.setEncoding('utf8')
