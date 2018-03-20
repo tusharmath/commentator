@@ -5,8 +5,8 @@
   "bin": "./src/cli.js",
   "scripts": {
     "build": "tsc",
-    "postinstall": "typings install",
     "prepublish": "npm run build",
+    "test": "echo 'no tests yet!'",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "Tushar Mathur <tusharmath@gmail.com>",
@@ -18,9 +18,9 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "^2.0.0",
+    "@types/node": "^9.4.7",
     "semantic-release": "^6.3.2",
-    "typescript": "^2.1.4",
-    "typings": "^2.0.0"
+    "typescript": "^2.1.4"
   },
   "config": {
     "commitizen": {

@@ -13,15 +13,15 @@ process.stdin.on('end', () => main().then(
 ))
 
 function getParams () {
-  const [owner, repo] = process.env.TRAVIS_REPO_SLUG.split('/')
+  const [owner, repo] = process.env['TRAVIS_REPO_SLUG'].split('/')
   return {
     owner, repo,
-    number: process.env.TRAVIS_PULL_REQUEST
+    number: process.env['TRAVIS_PULL_REQUEST']
   }
 }
 
 async function main () {
-  if (!process.env.TRAVIS_PULL_REQUEST) return
+  if (!process.env['TRAVIS_PULL_REQUEST']) return
   const p = getParams()
   const uri = `https://api.github.com/repos/${p.owner}/${p.repo}/issues/${p.number}/comments`
   return await rp({
@@ -30,6 +30,6 @@ async function main () {
     body: {body},
     json: true,
     headers: {'User-Agent': p.repo},
-    qs: {access_token: process.env.GH_TOKEN}
+    qs: {access_token: process.env['GH_TOKEN']}
   })
 }
