@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "prepublish": "npm run build",
+    "test": "echo 'no tests yet!'",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "Tushar Mathur <tusharmath@gmail.com>",
