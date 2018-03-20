@@ -1,4 +1,6 @@
 # Commentator
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/tusharmath/commentator.svg)](https://greenkeeper.io/)
 A simple pull-request (PR) comentator for travis.
 
 ## Usage
