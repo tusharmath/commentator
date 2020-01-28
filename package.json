@@ -17,7 +17,7 @@
     "request-promise": "^4.1.1"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^2.0.0",
+    "cz-conventional-changelog": "^3.1.0",
     "@types/node": "^9.4.7",
     "semantic-release": "^6.3.2",
     "typescript": "^2.1.4"
